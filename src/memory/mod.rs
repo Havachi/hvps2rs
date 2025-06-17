@@ -58,3 +58,8 @@ impl From<VirtAddr> for PhysAddr {
 		PhysAddr(addr.as_u64() & 0x1FFFFFFF)
 	}
 }
+
+pub struct Interconnect {
+	ram_size: u32,
+	mem_control: [u32; 9],
+}

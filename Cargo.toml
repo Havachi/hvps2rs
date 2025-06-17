@@ -2,6 +2,17 @@
 name = "hvps2rs"
 version = "0.1.0"
 edition = "2024"
+build = "build.rs"
 
 [dependencies]
-modular-bitfield = "=0.11.2"
+shaman="0.1"
+log = "0.3"
+arrayvec = "0.4"
+serde = "0.3"
+lazy_static = { version = "0.2", optional = true }
+
+
+[lib]
+name = "hvps2rs"
+crate-type = ["rlib"]
+
