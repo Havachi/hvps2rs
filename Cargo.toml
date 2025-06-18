@@ -8,7 +8,7 @@ build = "build.rs"
 shaman="0.1"
 log = "0.3"
 arrayvec = "0.4"
-serde = "0.3"
+serde = {version = "1.0.219", features = ["derive"]}
 lazy_static = { version = "0.2", optional = true }
 
 
